@@ -1,0 +1,48 @@
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014 A…
+version: 4.8.2
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 2.5.0
+
+name: Moya, nameSpecified: 
+body: The MIT License (MIT…
+version: 13.0.1
+
+name: Realm, nameSpecified: 
+body: TABLE OF CONTENTS
+
+1…
+version: 3.16.1
+
+name: RealmSwift, nameSpecified: 
+body: TABLE OF CONTENTS
+
+1…
+version: 3.16.1
+
+name: Result, nameSpecified: 
+body: The MIT License (MIT…
+version: 4.1.0
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 4.5.0
+
+name: SwiftFormat, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 0.40.9
+
+name: SwiftLint, nameSpecified: 
+body: The MIT License (MIT…
+version: 0.32.0
+
+add-version-numbers: false
+
+LicensePlist Version: 1.8.3
