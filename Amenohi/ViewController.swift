@@ -18,8 +18,11 @@ class ViewController: UIViewController {
             switch result {
             case let .success(moyaResponse):
                 do {
-                    let data = try moyaResponse.mapJSON()
-                    print(data)
+                    let model = try moyaResponse.map(ForecastsModel.self)
+                    guard let today = model.forecasts.first else {
+                        return
+                    }
+                    print(today.telop)
                 } catch {
                     print("json parse失敗")
                 }

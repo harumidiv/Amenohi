@@ -17,6 +17,8 @@
 		0DA5779A22DAC2DC000D597D /* AmenohiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5779922DAC2DC000D597D /* AmenohiUITests.swift */; };
 		0DA577AB22DAD4FB000D597D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DA577AA22DAD4FB000D597D /* Settings.bundle */; };
 		0DDA894F22FECE8B0084C179 /* CityPalam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA894E22FECE8B0084C179 /* CityPalam.swift */; };
+		0DDA895222FED79F0084C179 /* TemperaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA895122FED79F0084C179 /* TemperaturesModel.swift */; };
+		0DDA895422FED7AD0084C179 /* ForecastsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA895322FED7AD0084C179 /* ForecastsModel.swift */; };
 		19B54697D3B4B0A4FA8F2C62 /* Pods_AmenohiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003DE3DE8C1298FCDCACC55 /* Pods_AmenohiUITests.framework */; };
 		A52B76045613F8156302F8A3 /* Pods_Amenohi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37699C860E960BB98217B6 /* Pods_Amenohi.framework */; };
 		C45CD2E4D34651A9961DE981 /* Pods_AmenohiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69434A9AD84035717CE8BB63 /* Pods_AmenohiTests.framework */; };
@@ -58,6 +60,8 @@
 		0DA577AA22DAD4FB000D597D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Amenohi/Settings.bundle; sourceTree = "<group>"; };
 		0DB1F3FE4AAD1AB9C4252E82 /* Pods-AmenohiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmenohiUITests.release.xcconfig"; path = "Target Support Files/Pods-AmenohiUITests/Pods-AmenohiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0DDA894E22FECE8B0084C179 /* CityPalam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPalam.swift; sourceTree = "<group>"; };
+		0DDA895122FED79F0084C179 /* TemperaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturesModel.swift; sourceTree = "<group>"; };
+		0DDA895322FED7AD0084C179 /* ForecastsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastsModel.swift; sourceTree = "<group>"; };
 		2841B35F583DF9222B7124D4 /* Pods-AmenohiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmenohiUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmenohiUITests/Pods-AmenohiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F5406D572E77218518C07A8 /* Pods-Amenohi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amenohi.release.xcconfig"; path = "Target Support Files/Pods-Amenohi/Pods-Amenohi.release.xcconfig"; sourceTree = "<group>"; };
 		6003DE3DE8C1298FCDCACC55 /* Pods_AmenohiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmenohiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,7 @@
 		0DA5777822DAC2DA000D597D /* Amenohi */ = {
 			isa = PBXGroup;
 			children = (
+				0DDA895022FED7900084C179 /* Data */,
 				0D038FEF22FEC87F002CE218 /* NetWork */,
 				0DA5777922DAC2DA000D597D /* AppDelegate.swift */,
 				0DA5777B22DAC2DA000D597D /* ViewController.swift */,
@@ -157,6 +162,15 @@
 				0DA5779B22DAC2DC000D597D /* Info.plist */,
 			);
 			path = AmenohiUITests;
+			sourceTree = "<group>";
+		};
+		0DDA895022FED7900084C179 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0DDA895122FED79F0084C179 /* TemperaturesModel.swift */,
+				0DDA895322FED7AD0084C179 /* ForecastsModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		3D30FE86FBC57E24110254F4 /* Pods */ = {
@@ -461,9 +475,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDA895222FED79F0084C179 /* TemperaturesModel.swift in Sources */,
 				0DA5777C22DAC2DA000D597D /* ViewController.swift in Sources */,
 				0DA5777A22DAC2DA000D597D /* AppDelegate.swift in Sources */,
 				0DDA894F22FECE8B0084C179 /* CityPalam.swift in Sources */,
+				0DDA895422FED7AD0084C179 /* ForecastsModel.swift in Sources */,
 				0D038FEE22FEC651002CE218 /* TenkiAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
