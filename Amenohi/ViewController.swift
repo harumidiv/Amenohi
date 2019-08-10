@@ -6,12 +6,26 @@
 //  Copyright © 2019 佐川晴海. All rights reserved.
 //
 
+import Moya
 import UIKit
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .blue
+
+        let provider = MoyaProvider<TenkiAPI>()
+        provider.request(.tokyo) { result in
+            switch result {
+            case let .success(moyaResponse):
+                do {
+                    let data = try moyaResponse.mapJSON()
+                    print(data)
+                } catch {
+                    print("json parse失敗")
+                }
+            case let .failure(error):
+                print("アクセスに失敗しました:\(error)")
+            }
+        }
     }
 }

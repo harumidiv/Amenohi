@@ -17,7 +17,10 @@ enum TenkiAPI {
 
 extension TenkiAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "")!
+        guard let url = URL(string: "http://weather.livedoor.com/forecast/webservice/json/v1") else {
+            fatalError("base URL error")
+        }
+        return url
     }
 
     var path: String {
