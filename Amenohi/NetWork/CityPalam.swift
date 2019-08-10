@@ -1,5 +1,5 @@
 //
-//  LivedoorWeatherAPI.swift
+//  CityPalam.swift
 //  Amenohi
 //
 //  Created by 佐川晴海 on 2019/08/10.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-import Moya
-
-class LivedoorWetherAIP {}
